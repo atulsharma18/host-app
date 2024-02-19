@@ -6,7 +6,7 @@ const routes: Routes = [
 
 
 { path: 'remote', loadChildren: () =>loadRemoteModule({
-  remoteEntry: 'http://localhost:4202/remoteEntry.js',
+  remoteEntry: 'https://remote-app-sooty.vercel.app/remoteEntry.js',
   remoteName:'remoteApp2',
   exposedModule: './MicrofrontendModule'
 }).then((m) => m.MicrofrontendModule).catch(err=>console.log(err)
